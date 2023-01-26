@@ -4,6 +4,7 @@ const winningMessage = document.querySelector("[data-winning-message]");
 const winningMessageTextElement = document.querySelector("[data-winning-message-text]");
 const restartButton = document.querySelector("[data-restart-button]");
 
+
 let isCircleTurn;
 
 const winningCombinations = [
@@ -31,7 +32,7 @@ const startGame = () => {
 };
 const endGame = (isDraw) => {
   if (isDraw) {
-    winningMessageTextElement.innerText = 'Empate'
+    winningMessageTextElement.innerText = 'Deu Velha'
   } else {
     winningMessageTextElement.innerText = isCircleTurn ? 'O  Venceu!' : 'X  Venceu!';
   };
